@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 10  
+      nodejs: 12  
   build:
     commands:
       - yum install dos2unix -y
@@ -20,5 +20,3 @@ artifacts:
     - before_install.sh
     - application_start.sh
     - appspec.yml
-
-  discard-paths: yes
