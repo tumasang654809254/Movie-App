@@ -14,9 +14,9 @@ phases:
 # Include only the files required for your application to run.
 artifacts:
   files:
-    - App.js
-    - index.js
+    - src/App.js
+    - src/index.js
     - package.json
-    - before_install.sh
-    - application_start.sh
+    - srcripts/before_install.sh
+    - scripts/application_start.sh
     - appspec.yml
