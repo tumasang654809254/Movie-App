@@ -4,10 +4,12 @@ phases:
   install:
     runtime-versions:
       nodejs: 18  
+  pre_build:
+    commands:
+      - npm install
   build:
     commands:
-      - yum install dos2unix -y
-      - sudo dos2unix *
+      - npm run build
   post_build:
     commands:
       - echo Build completed
