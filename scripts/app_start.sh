@@ -1,6 +1,5 @@
 #!/bin/bash
-set -e
-mkdir /home/ec2-user/server
+
 cd /home/ec2-user/server
 cp build/nginx.conf /etc/nginx/nginx.conf
 cp -R dist /var/www/html/taxi-booker
