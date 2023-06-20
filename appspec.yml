@@ -5,12 +5,6 @@ files:
   - source: /
     destination: /home/ec2-user/server
 
-permissions:
-  - object: /
-    pattern: "**"
-    owner: root
-    group: root
-
 hooks:
 
   ApplicationStop:
