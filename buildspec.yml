@@ -17,6 +17,6 @@ artifacts:
     - src/App.js
     - src/index.js
     - package.json
-    - srcripts/before_install.sh
+    - scripts/before_install.sh
     - scripts/application_start.sh
     - appspec.yml
