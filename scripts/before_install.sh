@@ -1,6 +1,8 @@
-#!/bin/bash
+#!/usr/bin/bash
+# Install node.js
 # Install node.js and PM2 globally
-sudo apt-get update
-sudo apt-get install nodejs-legacy -y
-sudo apt-get install npm  -y
+
+sudo yum update
+sudo yum install nodejs-legacy -y
+sudo yum install npm  -y
 sudo npm install pm2 -g
