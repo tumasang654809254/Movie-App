@@ -6,10 +6,10 @@
 
 # here we update the server and install node and npm
 echo installing dependencies
-sudo yum update
+sudo apt-get update
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo yum install nodejs -y
-sudo yum -y install npm
+sudo apt-get install nodejs -y
+sudo apt-get -y install npm
 
 # check to make sure the symbolic link for nodejs node exists
 echo checking for nodejs symlink
@@ -24,7 +24,7 @@ fi
 # install the application using npm
 # we need to traverse to where the application bundle is copied too.
 echo installing application with npm
-cd /app
+cd /var/www/
 sudo npm install
 
 echo installing pm2
